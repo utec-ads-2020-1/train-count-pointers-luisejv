@@ -25,7 +25,7 @@ void chasing(int **A[], int a, int *B[], int b, int C[], int c)
                     if (caracter == "A")
                     {
                         string m;
-                        while (getline(stream, m, ' '))
+                        while (getline(stream, m, ' ') && !correcto)
                         {
                             if (m[0] != 0)
                             {
@@ -36,14 +36,14 @@ void chasing(int **A[], int a, int *B[], int b, int C[], int c)
                                     if (stoi(m) < a && stoi(m) >= 0)
                                     {
                                         string second;
-                                        while (getline(stream, second, ' '))
+                                        while (getline(stream, second, ' ') && !correcto)
                                         {
                                             if (second[0] != 0)
                                             {
                                                 if (second == "B")
                                                 {
                                                     string n;
-                                                    while (getline(stream, n, ' '))
+                                                    while (getline(stream, n, ' ') && !correcto)
                                                     {
                                                         if (n[0] != 0)
                                                         {
@@ -80,7 +80,7 @@ void chasing(int **A[], int a, int *B[], int b, int C[], int c)
                     if (caracter == "B")
                     {
                         string m;
-                        while (getline(stream, m, ' '))
+                        while (getline(stream, m, ' ') && !correcto)
                         {
                             if (m[0] != 0)
                             {
@@ -91,14 +91,14 @@ void chasing(int **A[], int a, int *B[], int b, int C[], int c)
                                     if (stoi(m) < b && stoi(m) >= 0)
                                     {
                                         string second;
-                                        while (getline(stream, second, ' '))
+                                        while (getline(stream, second, ' ') && !correcto)
                                         {
                                             if (second[0] != 0)
                                             {
                                                 if (second == "C")
                                                 {
                                                     string n;
-                                                    while (getline(stream, n, ' '))
+                                                    while (getline(stream, n, ' ') && !correcto)
                                                     {
                                                         if (n[0] != 0)
                                                         {
